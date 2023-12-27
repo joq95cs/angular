@@ -1,0 +1,19 @@
+<p>Nombre: {{nombre}}</p>
+
+<p>Apellido: {{apellido}}</p>
+
+<p>Edad: {{edad >= 18 ? edad + " (Mayor de edad)": "Menor de edad"}}</p> <!--Interpolación en acción-->
+
+<p>Empresa: {{empresa}}</p>
+
+<!--Introduce la emmpresa: <input type="text" #empresa (keyup)="0" [disabled]="deshabilitado"> <!--Binding-->
+
+Introduce la empresa: <input type="text" [(ngModel)]="empresa">
+
+<p>{{textoRegistro}}</p>
+
+<p>Registrado: <input type="radio" value="S" name="r_registrado" [checked]="registrado" (click)="setRegistrado($event)"></p>
+
+<p>No registrado <input type="radio" value="N" name="r_registrado" (click)="setRegistrado($event)"></p>
+
+{{switchRegistrado()}}

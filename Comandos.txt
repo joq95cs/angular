@@ -1,0 +1,29 @@
+node -v
+npm -v
+ng v
+
+ng new PrimeraApp
+
+ng serve --open
+ng serve -o
+
+ng generate component empleado
+ng g c empleado
+ng g c empleado -s -t
+
+npm install bootstrap --save
+
+npm i bootstrap jquery popper.js --save
+
+ng g s servicio-empleados
+
+npm install firebase
+npm install --save firebase
+npm install --save firebase --allow-dirty
+npm install --save firebase --allow-dirty --force
+
+npm install ngx-cookie-service --save
+npm install ngx-cookie-service --save --force
+
+ng build --configuration production --aot
+ng build --configuration production --aot --base-href /empleados
